@@ -18,11 +18,16 @@ h1 {
 
 .info-area {
     width: 95%;
-    height: 400px;
-    overflow: auto;
-    min-height: 300px;
+    /* height: 400px;
+    min-height: 300px; */
     border-bottom: 1px solid grey;
     margin: 5px auto;
+}
+.item {
+    overflow: auto;
+    min-height: 300px;
+    height: 400px;
+    min-height: 300px;
 }
 
 .input-data {
@@ -51,7 +56,7 @@ label {
     color: gray;
 }
 .btn-style {
-    width: 45px;
+    width: auto;
     height: 17px;
     color: black;
     background-color: cadetblue;
@@ -98,6 +103,20 @@ label {
     border-radius: 10px;
     background-color: white;
 }
+.editable {
+    border: 1px solid rgb(83, 200, 221);
+    width: 35%;
+    display: flex;
+    align-items: center;
+    height: 250x;
+    padding: 5px 5px 5px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+.editable:focus {
+    background-color: rgb(83, 200, 221);
+}
 .error-response {
     display: none;
     width: 95%;
@@ -105,6 +124,12 @@ label {
     margin: 15px auto;
     text-align: center;
     transition: ease-out 0.3s;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
 
 /* полоса прокрутки (скроллбар) */
