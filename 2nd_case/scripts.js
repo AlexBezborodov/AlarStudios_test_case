@@ -23,19 +23,14 @@ const items = document.querySelector('.item'),
             </div>    
             `;
         });
-    };
+    }
     showDB();
       
-
-
-
-
-
 const addItems = () => {
     
     const name = document.querySelector("[name = 'name']").value,
           phone = document.querySelector("[name = 'phone']").value,
-          inputs = document.querySelectorAll('.input-data');
+          inputs = document.querySelectorAll('input');
           
 
     if(name != ''&& name !=Number ) {
@@ -47,8 +42,9 @@ const addItems = () => {
     }else {
         console.log('Something wrong');
     }
-    
     showDB();
-    inputs.innerHTML = '';
-}
+    inputs.forEach(clearInput => clearInput.value = '');
+    
+    
+};
 btnSave.addEventListener('click', addItems);
