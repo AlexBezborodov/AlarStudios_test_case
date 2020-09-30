@@ -58,10 +58,11 @@ label {
     border-radius: 2px;
     border: none;
     opacity: 0.5;
+    margin: 0 15px 0 0;
 }
 .btn-style:hover {
-    color: black;
-    background-color: yellowgreen;
+    color: azure;
+    background-color: rgb(49, 49, 32);
     border: none;
     opacity: 1;
     transition: ease-in 0.5s;
@@ -82,6 +83,8 @@ label {
 
 .data-placeholder:hover {
     opacity: 1;
+    background-color: lightblue;
+    transition: ease-out 0.5s;
 }
 
 .data-item {
@@ -93,6 +96,15 @@ label {
     padding: 5px 5px 5px 20px;
     margin: 20px;
     border-radius: 10px;
+    background-color: white;
+}
+.error-response {
+    display: none;
+    width: 95%;
+    color: red;
+    margin: 15px auto;
+    text-align: center;
+    transition: ease-out 0.3s;
 }
 
 /* полоса прокрутки (скроллбар) */
